@@ -2,20 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Antón Vila‑Sanjurjo – Lab</title>
+  <title>AVS Lab – Antón Vila‑Sanjurjo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* ===== Base ===== */
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+    }
+
+    /* ===== Institutional banner (FULL WIDTH) ===== */
+    .institutional-banner {
+      width: 100%;
+      background-color: #ffffff;
+      border-bottom: 1px solid #d6dbe1;
+      text-align: center;
+    }
+
+    .institutional-banner img {
+      width: 100%;
+      max-width: 1600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ===== Page container (900 px content) ===== */
+    .page {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 0 auto;
       padding: 0 20px;
     }
+
+    /* ===== AVS Lab header ===== */
+    .site-header {
+      background: linear-gradient(180deg, #f4f6f8 0%, #e9edf2 100%);
+      border-bottom: 1px solid #d6dbe1;
+      padding: 26px 20px 22px 20px;
+      margin-bottom: 2.5em;
+    }
+
+    .site-title h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 0.4px;
+    }
+
+    .site-title p {
+      margin: 0.4em 0 0.8em 0;
+      color: #555;
+      font-size: 1.05em;
+    }
+
+    .site-nav a {
+      margin-right: 1.2em;
+      text-decoration: none;
+      color: #1f4e79;
+      font-weight: bold;
+    }
+
+    .site-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Content ===== */
     h1, h2 {
       margin-top: 1.5em;
     }
+
     p {
       margin-bottom: 1em;
     }
@@ -23,7 +79,8 @@
 </head>
 
 <body>
-<!-- ===== TRUE institutional banner ===== -->
+
+<!-- ===== Institutional banner ===== -->
 <div class="institutional-banner">
   <img src="images/CICA-logo.png"
        alt="CICA – Centro Interdisciplinar de Química e Bioloxía">
@@ -40,7 +97,7 @@
         Ph.D. in Biology, Brown University (Providence, RI), 2001
       </p>
     </div>
-  
+
     <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -49,18 +106,20 @@
       <a href="about.html">About</a>
     </nav>
   </header>
-  
-<h1>Antón Vila‑Sanjurjo</h1>
 
-<p>
-This site presents research from my laboratory, focused on ribosome structure,
-mitochondrial translation, and translational fidelity.
-</p>
+  <!-- ===== Home content ===== -->
+  <h1>Antón Vila‑Sanjurjo</h1>
 
-<p>
-Current work centers on the mitochondrial ribosome and on the development of
-Heterologous Inferential Analysis (HIA) to interpret mitochondrial rRNA variants.
-</p>
+  <p>
+    This site presents research from the AVS Lab, focused on ribosome structure,
+    mitochondrial translation, and translational fidelity.
+  </p>
 
+  <p>
+    Current work centers on the mitochondrial ribosome and on the development of
+    Heterologous Inferential Analysis (HIA) to interpret mitochondrial rRNA variants.
+  </p>
+
+</div>
 </body>
 </html>
