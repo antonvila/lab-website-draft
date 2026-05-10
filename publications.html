@@ -21,13 +21,14 @@
       text-align: center;
     }
 
-    .institutional-banner img {
-      width: 100%;
-      max-width: 1600px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+.institutional-banner img {
+  width: auto;
+  max-width: 100%;
+  height: 110px;        /* ← this is the key line */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
 
     /* ===== Page container ===== */
     .page {
