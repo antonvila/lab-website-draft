@@ -2,25 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Members & Alumni</title>
+  <title>Members – AVS Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* ===== Base ===== */
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
       line-height: 1.6;
     }
 
+    /* ===== Institutional banner ===== */
+    .institutional-banner {
+      width: 100%;
+      background-color: #ffffff;
+      border-bottom: 1px solid #d6dbe1;
+      text-align: center;
+    }
+
+    .institutional-banner img {
+      width: auto;
+      max-width: 100%;
+      height: 110px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ===== AVS Lab header ===== */
+    .site-header {
+      width: 100%;
+      background: linear-gradient(180deg, #f4f6f8 0%, #e9edf2 100%);
+      border-bottom: 1px solid #d6dbe1;
+      padding: 26px 0 22px 0;
+      margin-bottom: 2.5em;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .site-title h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 0.4px;
+    }
+
+    .site-title p {
+      margin: 0.4em 0 0.8em 0;
+      color: #555;
+      font-size: 1.05em;
+    }
+
+    .site-nav a {
+      margin-right: 1.2em;
+      text-decoration: none;
+      color: #1f4e79;
+      font-weight: bold;
+    }
+
+    .site-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Page content ===== */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px 40px 20px;
+    }
+
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
+      margin-top: 2em;
+      border-bottom: 1px solid #d6dbe1;
+      padding-bottom: 0.3em;
     }
 
     h3 {
-      margin-top: 2rem;
+      margin-top: 1.8em;
     }
 
     ul {
@@ -36,8 +98,8 @@
     }
 
     img.avatar {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       object-fit: cover;
       background-color: #eee;
@@ -46,21 +108,52 @@
 
     .orcid {
       font-size: 0.95em;
+      color: #444;
     }
   </style>
 </head>
 
 <body>
 
-<section id="members">
+<!-- ===== Institutional banner ===== -->
+<div class="institutional-banner">
+  <img src="images/CICA-logo.png"
+       alt="CICA – Centro Interdisciplinar de Química e Bioloxía">
+</div>
+
+<!-- ===== AVS Lab header ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-title">
+      <h1>AVS Lab</h1>
+      <p>
+        Antón Vila‑Sanjurjo · Associate Professor of Genetics, Universidade da Coruña ·
+        Ph.D. in Biology, Brown University (Providence, RI), 2001
+      </p>
+    </div>
+
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="members.html">Members</a>
+      <a href="publications.html">Publications</a>
+      <a href="collaborations.html">Collaborations</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Page content ===== -->
+<div class="page">
+
   <h2>Members</h2>
 
   <h3>Principal Investigator (PI)</h3>
   <ul>
     <li class="person">
-      <img src="assets/img/avatar.png" alt="Antón Vila-Sanjurjo" class="avatar">
+      <img class="avatar" src="assets/img/avatar.png" alt="Antón Vila-Sanjurjo">
       <div>
-        <strong>Antón Vila-Sanjurjo</strong><br>
+        <strong>Antón Vila‑Sanjurjo</strong><br>
         Associate Professor of Genetics
       </div>
     </li>
@@ -69,15 +162,26 @@
   <h3>PhD Students</h3>
   <ul>
     <li class="person">
-      <img src="assets/img/avatar.png" alt="Alejandro Novoa Pello" class="avatar">
+      <img class="avatar" src="assets/img/avatar.png" alt="Manuel González Veiga">
       <div>
-        <strong>Alejandro Novoa Pello</strong> – PhD student<br>
-        <span class="orcid">
-          ORCID:
-          <a href="https://orcid.org/0009-0007-1580-9653" target="_blank" rel="noopener">
-            0009-0007-1580-9653
-          </a>
-        </span>
+        <strong>González Veiga, Manuel</strong><br>
+        <span class="orcid">ORCID: 0009‑0007‑7275‑4396</span>
+      </div>
+    </li>
+
+    <li class="person">
+      <img class="avatar" src="assets/img/avatar.png" alt="Alejandro Novoa Pello">
+      <div>
+        <strong>Novoa Pello, Alejandro</strong><br>
+        <span class="orcid">ORCID: 0009‑0007‑1580‑9653</span>
+      </div>
+    </li>
+
+    <li class="person">
+      <img class="avatar" src="assets/img/avatar.png" alt="José María Traba Velay">
+      <div>
+        <strong>Traba Velay, José María</strong><br>
+        <span class="orcid">ORCID: 0000‑0001‑8718‑9405</span>
       </div>
     </li>
   </ul>
@@ -85,40 +189,62 @@
   <h3>Master / Undergraduate Students</h3>
   <ul>
     <li class="person">
-      <img src="assets/img/avatar.png" alt="Breno Valentino Muñoz Saavedra" class="avatar">
+      <img class="avatar" src="assets/img/avatar.png" alt="Breno Valentino Muñoz Saavedra">
       <div>
-        <strong>Breno Valentino Muñoz Saavedra</strong> – Master student
+        <strong>Muñoz Saavedra, Breno Valentino</strong>
+      </div>
+    </li>
+
+    <li class="person">
+      <img class="avatar" src="assets/img/avatar.png" alt="Nicole Oubiña Viñas">
+      <div>
+        <strong>Oubiña Viñas, Nicole</strong><br>
+        <span class="orcid">ORCID: 0009‑0006‑3697‑0449</span>
+      </div>
+    </li>
+
+    <li class="person">
+      <img class="avatar" src="assets/img/avatar.png" alt="Miriam Vilarnovo Allal">
+      <div>
+        <strong>Vilarnovo Allal, Miriam</strong>
       </div>
     </li>
   </ul>
-</section>
 
-<section id="alumni">
   <h2>Alumni</h2>
   <ul>
     <li class="person">
-      <img src="assets/img/avatar.png" alt="Celina Vila Sanjurjo" class="avatar">
+      <img class="avatar" src="assets/img/avatar.png" alt="Natalia Mallo Seijas">
       <div>
-        <strong>Dr. Celina Vila Sanjurjo</strong><br>
-        <span class="orcid">
-          ORCID:
-          <a href="https://orcid.org/0000-0001-7608-1642" target="_blank" rel="noopener">
-            0000-0001-7608-1642
-          </a>
-        </span>
+        <strong>Mallo Seijas, Natalia</strong><br>
+        <span class="orcid">ORCID: 0000‑0002‑2811‑5788</span>
       </div>
     </li>
 
     <li class="person">
-      <img src="assets/img/avatar.png" alt="Juan José Rebón Suárez" class="avatar">
+      <img class="avatar" src="assets/img/avatar.png" alt="Juan José Rebón Suárez">
       <div>
-        <strong>Juan José Rebón Suárez</strong>
+        <strong>Rebón Suárez, Juan José</strong>
+      </div>
+    </li>
+
+    <li class="person">
+      <img class="avatar" src="assets/img/avatar.png" alt="José Luis Rodríguez Rama">
+      <div>
+        <strong>Rodríguez Rama, José Luis</strong>
+      </div>
+    </li>
+
+    <li class="person">
+      <img class="avatar" src="assets/img/avatar.png" alt="Celina Vila Sanjurjo">
+      <div>
+        <strong>Vila Sanjurjo, Celina</strong><br>
+        <span class="orcid">ORCID: 0000‑0001‑7608‑1642</span>
       </div>
     </li>
   </ul>
-</section>
 
-      <strong>Name Surname</strong> – PhD student (YYYY–YYYY), now Position, Institution
-    </li>
-  </ul>
-</section>
+</div>
+
+</body>
+</html>
