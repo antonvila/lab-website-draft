@@ -68,30 +68,40 @@
       text-decoration: underline;
     }
 
-    /* ===== Page content container ===== */
+   
+    /* ===== Page content ===== */
     .page {
       max-width: 900px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 20px 40px 20px;
     }
 
-    h1, h2 {
-      margin-top: 1.5em;
+    /* ===== Research index layout ===== */
+    .research-area {
+      margin: 3em 0;
     }
 
-    p {
-      margin-bottom: 1em;
+    .research-link {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-top: 0.6em;
     }
 
-    figure {
-      margin: 2em 0;
-      text-align: center;
+    .research-link a {
+      font-weight: bold;
+      color: #1f4e79;
+      text-decoration: none;
     }
 
-    figcaption {
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 0.5em;
+    .research-link a:hover {
+      text-decoration: underline;
+    }
+
+    .research-thumb {
+      width: 65px;           /* ✅ very small thumbnail */
+      height: auto;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
@@ -127,47 +137,53 @@
 </header>
 
 <!-- ===== Page content ===== -->
+<div class="page">
 
-<!-- ===== Research area: Mitoribosome ===== -->
-<div class="research-area">
+  <h1>Research</h1>
 
-  <div class="research-text">
+  <p>
+    Research in the AVS Lab focuses on fundamental mechanisms of translational control,
+    spanning mitochondrial protein synthesis and population‑level regulatory
+    processes in microorganisms.
+  </p>
+
+  <!-- ===== Research area: Mitoribosome ===== -->
+  <div class="research-area">
     <h2>The mitochondrial ribosome</h2>
 
     <p>
-      We study the structure, function, and fidelity of the mitochondrial
-      ribosome and how defects in mitochondrial translation contribute to
-      human disease, ageing, and metabolic dysfunction.
+      We investigate the structure, function, and fidelity of the mitochondrial
+      ribosome, and how defects in mitochondrial translation contribute to human
+      disease, ageing, and metabolic dysfunction.
     </p>
 
     <p class="research-link">
-      Mitoribosome.htmlRead more →</a>
-      images/amunts_2.2_mutations_050726.jpg
+      <a href="Mitoribosome.html">Read more →</a>
+      <img
+        src="images/amunts_2.2_mutations_050726.jpg"
+        alt="Structural analysis of mt‑rRNA variants"
+        class="research-thumb">
     </p>
   </div>
 
-</div>
-
   <!-- ===== Research area: Quorum sensing ===== -->
   <div class="research-area">
-    <img src="images/quorum-sensing-placeholder.jpg"
-         alt="Quorum sensing"
-         class="research-thumb">
+    <h2>Quorum sensing</h2>
 
-    <div class="research-text">
-      <h2>Quorum sensing</h2>
-      <p>
-        We investigate quorum sensing as a population‑level regulatory mechanism,
-        with particular interest in its links to stress responses, metabolism,
-        and translational control.
-      </p>
-      <p>
-        <a href="research-quorum-sensing.html">Read more →</a>
-      </p>
-    </div>
+    <p>
+      We study quorum sensing as a population‑level regulatory mechanism, with
+      particular emphasis on its links to stress responses, metabolism, and
+      translational control.
+    </p>
+
+    <p class="research-link">
+      <a href="research-quorum-sensing.html">Read more →</a>
+      <!-- thumbnail can be added later -->
+    </p>
   </div>
 
 </div>
 
 </body>
 </html>
+
