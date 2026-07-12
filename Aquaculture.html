@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+> <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Aquaculture – AVS Lab</title>
+  <title>Research – AVS Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -21,16 +21,16 @@
       text-align: center;
     }
 
-    .institutional-banner img {
-      width: auto;
-      max-width: 100%;
-      height: 110px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-    }
+.institutional-banner img {
+  width: auto;
+  max-width: 100%;
+  height: 110px;        /* ← this is the key line */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
 
-    /* ===== AVS Lab header ===== */
+    /* ===== AVS Lab header (FULL WIDTH) ===== */
     .site-header {
       width: 100%;
       background: linear-gradient(180deg, #f4f6f8 0%, #e9edf2 100%);
@@ -68,6 +68,7 @@
       text-decoration: underline;
     }
 
+   
     /* ===== Page content ===== */
     .page {
       max-width: 900px;
@@ -98,7 +99,7 @@
     }
 
     .research-thumb {
-      width: 65px;
+      width: 65px;           /* ✅ very small thumbnail */
       height: auto;
       border: 1px solid #ccc;
     }
@@ -109,7 +110,8 @@
 
 <!-- ===== Institutional banner ===== -->
 <div class="institutional-banner">
-  images/CICA-logo.png
+  <img src="images/CICA-logo.png"
+       alt="CICA – Centro Interdisciplinar de Química e Bioloxía">
 </div>
 
 <!-- ===== AVS Lab header ===== -->
