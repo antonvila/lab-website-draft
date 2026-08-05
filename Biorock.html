@@ -209,7 +209,8 @@ const jajaja = [
     "YWNoZWNhQHVnci5lcw==",
     "Y2xhdWRpby5nYXJjaWFAdXNhY2guY2w=",
     "bWdvZG95YmVybXVkZXpAdWdyLmVz",
-    "dHNhcmtpc2lhbkBnbG9iYWxjb3JhbC5vcmc="
+    "dHNhcmtpc2lhbkBnbG9iYWxjb3JhbC5vcmc=",
+    "YW50b24udmlsYUB1ZGMuZXM="
 ];
 
   const jaja = prompt(
@@ -218,7 +219,7 @@ const jajaja = [
 
   if (!jaja) return;
 
-  const JAJAJAJA = jaja.trim().toLowerCase();
+  const JAJAJAJA = btoa(jaja.trim().toLowerCase());
 
   if (jajaja.includes(JAJAJAJA)) {
     window.location.href = "Bioremediation_videos.html";
